@@ -3,7 +3,7 @@
 @section('title', '詳細画面')
 
 @section('content')
-
+@include('layouts.restaurant', compact('restaurant'))
 <body>
     <div class="container">
         <table class="table-bordered mb-5 mt-3">

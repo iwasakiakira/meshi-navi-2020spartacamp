@@ -23,7 +23,7 @@ class RestaurantController extends Controller
             });
 
         }
-        $restaurants = $query->simplePaginate(10);
+        $restaurants = $query->simplePaginate(5);
         $restaurants->appends(compact('name', 'category'));
         // 配列に追加するときにappendsが使える
         // クエリーに情報を追加していく
